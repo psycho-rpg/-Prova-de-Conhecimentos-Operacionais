@@ -3,155 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prova de Conhecimentos Operacionais</title>
+    <title>Inscrição - Operações Especiais BOPE</title>
     <style>
         body {
+            background: url('https://cdn.discordapp.com/attachments/1367840916211241002/1381598208710414447/image0.gif?ex=68481919&is=6846c799&hm=7d95eed40538d2f343ef3d198c4b729b04e36870d9a9b9d6948b7c506b7d397e') no-repeat center center fixed;
+            background-size: cover;
             font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #ff6600, #ffcc00);
-            color: #fff;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        }
-        h2 {
+            color: white;
             text-align: center;
-            background: #ff6600;
-            padding: 15px;
-            border-radius: 8px 8px 0 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+            color: yellow;
+            background-color: black;
+            padding: 10px;
+        }
+        .mensagem {
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .formulario {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
         }
         label {
-            display: block;
-            margin-top: 15px;
             font-size: 18px;
+            display: block;
+            margin-top: 10px;
         }
-        input, textarea {
+        input, select, textarea {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        textarea {
-            height: 80px;
+            border-radius: 5px;
         }
         button {
-            width: 100%;
-            padding: 12px;
-            background: #ffcc00;
-            color: black;
-            border: none;
-            border-radius: 4px;
+            margin-top: 20px;
+            padding: 10px 20px;
             font-size: 18px;
+            background-color: #ffcc00;
+            border: none;
             cursor: pointer;
-            margin-top: 20px;
-        }
-        button:hover {
-            background: #ff9900;
-        }
-        .finalizado {
-            display: none;
-            text-align: center;
-            font-size: 22px;
-            font-weight: bold;
-            padding: 20px;
-            background: #00cc66;
-            border-radius: 8px;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container" id="formContainer">
-        <h2>Prova de Conhecimentos Operacionais</h2>
-        
-        <label>Nome do candidato:</label>
-        <input type="text" id="nome" placeholder="Digite seu nome">
-        
-        <label>Data:</label>
-        <input type="date" id="data">
 
-        <label>1. O pixel com o nome de Caracol é de qual ação e onde ele fica?</label>
-        <textarea id="resp1" placeholder="Digite sua resposta"></textarea>
+    <audio autoplay loop>
+        <source src="musica-de-fundo.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio HTML5.  
+    </audio>
 
-        <label>2. Cite quais são os 4 pixels essenciais no Nióbio.</label>
-        <textarea id="resp2" placeholder="Digite sua resposta"></textarea>
+    <h1>INSCRIÇÕES OPERAÇÕES ESPECIAIS BOPE</h1>
+    <p class="mensagem">A coragem é o que nos define! Junte-se a nós e faça a diferença.</p>
 
-        <label>3. Quais são as regras padrão de negociação?</label>
-        <textarea id="resp3" placeholder="Digite sua resposta"></textarea>
+    <div class="formulario">
+        <form id="bopeForm">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
 
-        <label>4. Cite 3 pixels do ilegal no Banco Paleto.</label>
-        <textarea id="resp4" placeholder="Digite sua resposta"></textarea>
+            <label>ID:</label>
+            <input type="text" name="id" required>
 
-        <label>5. Qual o número mínimo de bandidos e de policiais para uma ação?</label>
-        <textarea id="resp5" placeholder="Digite sua resposta"></textarea>
+            <label>Patente:</label>
+            <input type="text" name="patente" required>
 
-        <label>6. O que significa a gíria "teto/chão" nas ações?</label>
-        <textarea id="resp6" placeholder="Digite sua resposta"></textarea>
+            <label>Tempo de polícia (data de ingresso):</label>
+            <input type="date" name="tempo_policia" required>
 
-        <label>7. Em uma ação, quem tem mais voz e mais autoridade?</label>
-        <textarea id="resp7" placeholder="Digite sua resposta"></textarea>
+            <label>Já foi preso?</label>
+            <select name="preso" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
 
-        <label>8. Quantas entradas tem a ação Teatro?</label>
-        <textarea id="resp8" placeholder="Digite sua resposta"></textarea>
+            <label>Possui advertência?</label>
+            <select name="advertencia" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
 
-        <label>9. Em casos de quebra de negociação por parte do ilegal, o que deve ser feito?</label>
-        <textarea id="resp9" placeholder="Digite sua resposta"></textarea>
+            <label>Companhia pertencente:</label>
+            <select name="cia" required>
+                <option value="">Selecione</option>
+                <option value="GAM">GAM</option>
+                <option value="GTM">GTM</option>
+                <option value="CHOQUE">CHOQUE</option>
+            </select>
 
-        <label>10. Quais ações permitem apenas o uso de PT?</label>
-        <textarea id="resp10" placeholder="Digite sua resposta"></textarea>
+            <label>Motivo para ingressar no BOPE:</label>
+            <textarea name="motivo" rows="5" required></textarea>
 
-        <button onclick="enviarRespostas()">Enviar Respostas</button>
-    </div>
+            <label>Anexar documento:</label>
+            <input type="file" name="anexo" accept=".jpg,.png,.pdf,.docx" required>
 
-    <div class="finalizado" id="finalizado">
-        ✅ **Prova finalizada!** Sua resposta foi enviada com sucesso. Obrigado por participar!
+            <button type="button" onclick="enviarFormulario()">Enviar Inscrição</button>
+        </form>
     </div>
 
     <script>
-        function enviarRespostas() {
-            const webhookURL = "https://discord.com/api/webhooks/1379952558269010090/O_4XwoXXnuwA0eZUU6d7q08Zkt9ZECxOTBuLOo-FNjHNfTPxrj9XwPFcIkDvMUyHZugc";
+        function enviarFormulario() {
+            const webhookURL = "https://discord.com/api/webhooks/1373787235794686083/JcqZNWmHWPCqxCUXzlw5GWNWIaApax5sVFo51p9ZtiG5JcXT4j9YI47nX4PCLnGRKiPc";
             
-            const dados = {
-                content: "Nova prova enviada!",
-                embeds: [{
-                    title: "Respostas da Prova",
-                    fields: [
-                        { name: "Nome do candidato", value: document.getElementById("nome").value || "Não informado" },
-                        { name: "Data", value: document.getElementById("data").value || "Não informado" },
-                        { name: "Pergunta 1", value: document.getElementById("resp1").value || "Não respondido" },
-                        { name: "Pergunta 2", value: document.getElementById("resp2").value || "Não respondido" },
-                        { name: "Pergunta 3", value: document.getElementById("resp3").value || "Não respondido" },
-                        { name: "Pergunta 4", value: document.getElementById("resp4").value || "Não respondido" },
-                        { name: "Pergunta 5", value: document.getElementById("resp5").value || "Não respondido" },
-                        { name: "Pergunta 6", value: document.getElementById("resp6").value || "Não respondido" },
-                        { name: "Pergunta 7", value: document.getElementById("resp7").value || "Não respondido" },
-                        { name: "Pergunta 8", value: document.getElementById("resp8").value || "Não respondido" },
-                        { name: "Pergunta 9", value: document.getElementById("resp9").value || "Não respondido" },
-                        { name: "Pergunta 10", value: document.getElementById("resp10").value || "Não respondido" }
-                    ]
-                }]
-            };
+            const formData = new FormData(document.getElementById("bopeForm"));
+             let mensagem = "**Nova Inscrição BOPE**\n\n"; let mensagem = "**Nova Inscrição BOPE**\n\n";
+            
+              formData.forEach((valor, chave) => { DOCTYPE html>formData.forEach((valor, chave) => { formData.forEach((valor, chave) => { formData.forEach((valor, chave) => { DOCTYPE html>formData.forEach((valor, chave) => { formData.forEach((valor, chave) => {
+<html lang="pt">if (chave !== "anexo") {
+                      mensagemmensagem += `**${chave}:** ${valor}\n`; cabeça>mensagem += `**${chave}:** ${valor}\n`; mensagem += `**${chave}:** ${valor}\n`; mensagem += `**${chave}:** ${valor}\n`; cabeça>mensagem += `**${chave}:** ${valor}\n`; mensagem += `**${chave}:** ${valor}\n`;`**${chave}:** ${valor}\n`; cabeça>mensagem += `**${chave}:** ${valor}\n`; mensagem += `**${chave}:** ${valor}\n`; mensagem += `**${chave}:** ${valor}\n`; cabeça>mensagem += `**${chave}:** ${valor}\n`; mensagem += `**${chave}:** ${valor}\n`;
+                 } meta charset="UTF-8"> }
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> });
 
-            fetch(webhookURL, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(dados)
-            }).then(() => {
-                document.getElementById("formContainer").style.display = "none";  
-                document.getElementById("finalizado").style.display = "block";  
-                alert("Respostas enviadas! Prova finalizada.");
+              constconst arquivoconst arquivo = formData.get("anexo"); estilo> const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo"); estilo> const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo");formData.get("anexo"); estilo> const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo"); estilo> const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo");arquivo = formData.get("anexo"); estilo> const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo"); estilo> const arquivo = formData.get("anexo"); const arquivo = formData.get("anexo");
+    Corpo     { const payload = new FormData();
+  fundo//cdn.discordapp.com/attachments/1367840916211241002/1381598208710414447/image0.gif?ex=68481919&is=6846c799&hm=7d95eed40538d2f343ef3d198c4b729b04e36870d9a9b9d6948b7c506b7d397e') centro sem repetição fixo; payload.append("content", mensagem);//cdn.discordapp.com/attachments/1367840916211241002/1381598208710414447/image0.gif?ex=68481919&is=6846c799&hm=7d95eed40538d2f343ef3d198c4b729b04e36870d9a9b9d6948b7c506b7d397e') centro sem repetição fixo; payload.append("content", mensagem);url (https://cdn.discordapp.com/attachments/1367840916211241002/1381598208710414447/image0.gif?ex=68481919&is=6846c799&hm=7d95eed40538d2f343ef3d198c4b729b04e36870d9a9b9d6948b7c506b7d397e') centro sem repetição fixo; payload.append("content", mensagem);
+     Tamanho    do fundo: cobertura; if (arquivo) { if (arquivo) { 
+              font-family: Arial, sans-serif;  font-family: Arial, sans-serif; 
+  cor: branco; }cor: branco; }
+
+  preenchimento: 20px; fetch(webhookURL, {preenchimento: 20px; fetch(webhookURL, {
+         } method: "POST",
+ H1 { body: payload
+    Tamanho   da fonte: 50px; }).then(() => {  Tamanho   da fonte: 50px; }).then(() => {
+   Transformação  de texto: maiúscula; alert("Inscrição enviada com sucesso! Aguarde até ser convocado.")("Inscrição enviada com sucesso! Aguarde até ser convocado."); alert("Inscrição enviada com sucesso! Aguarde até ser convocado.") Transformação  de texto: maiúscula; alert("Inscrição enviada com sucesso! Aguarde até ser convocado.")("Inscrição enviada com sucesso! Aguarde até ser convocado."); alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.")alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.")alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");alert("Inscrição enviada com sucesso! Aguarde até ser convocado.");
+                   window.close(); // Fecha a página automaticamente após o envio. window.close(); // Fecha a página automaticamente após o envio.  window.close(); // Fecha a página automaticamente após o envio. window.close(); // Fecha a página automaticamente após o envio.  
             }).catch(() => {
-                alert("Falha ao enviar as respostas. Verifique o webhook.");
-            });
-        }
-    </script>
+                   alert("Ocorreu um erro ao enviar a inscrição. Por favor, tente novamente.");   alert("Ocorreu um erro ao enviar a inscrição. Por favor, tente novamente.");  
+   cor: amarelo; }); cor: amarelo; });
+    cor de fundo: preto; }cor de fundo: preto; }  cor de fundo: preto; }cor de fundo: preto; } cor de fundo: preto; } cor de fundo: preto; }cor de fundo: preto; } 
+ preenchimento: 10px; </script>
+
 </body>
 </html>
